@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  gap: 175px;
+  background-color: #1d1e2c;
+  width: 100%;
+  padding: 20px 310px;
+}
+
+.containerLogo {
+  cursor: pointer;
+}
+
+.containerSidebar {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories {
+  text-decoration: none;
+  width: 100px;
+  height: 20px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #fcfcfc;
+  transition: all 0.5s;
+  padding-bottom: 8px;
+}
+
+.categories:hover {
+  color: #5b7cfe;
+}
+
+.categories:active {
+   color: #fcfcfc;
+   border-bottom: 2px solid #5B7CFE;
+}
+
+.containerButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttonSignIn {
+  width: 114px;
+  text-align: center;
+}
+
+.buttonSignUp {
+  width: 114px;
+}

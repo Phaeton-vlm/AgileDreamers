@@ -1,0 +1,52 @@
+.button {
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fcfcfc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary {
+  background-color: #5b7cfe;
+}
+
+.primary:hover {
+  background-color: #f7dd72;
+  color: #5b7cfe;
+}
+
+.primary:active {
+  background-color: #f5d347;
+  color: #0538fd;
+}
+
+.secondary {
+  background-color: none;
+  border: 2px solid #5b7cfe;
+  color: #ffffff;
+}
+
+.secondary:hover {
+  background-color: #ebefff;
+  color: #5b7cfe;
+}
+
+.secondary:active {
+  background-color: #d6deff;
+  border: 2px solid #305afe;
+  color: #5b7cfe;
+}
+
+.disabled {
+  background-color: none;
+  border: 2px solid #ADBEFF;
+  color: #ADBEFF;
+  pointer-events: none;
+}
