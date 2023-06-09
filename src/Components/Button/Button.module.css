@@ -44,9 +44,38 @@
   color: #5b7cfe;
 }
 
+.cardPrimary {
+  padding: 16px 40px;
+  background-color: #5b7cfe;
+  color: #fcfcfc;
+}
+
+.cardPrimary:hover {
+  background-color: #f7dd72;
+  color: #5b7cfe;
+}
+
+.cardPrimary:active {
+  background-color: #f5d347;
+  color: #0538fd;
+}
+
+.cardSecondary {
+  padding: 16px 40px;
+  background-color: none;
+  color: #5b7cfe;
+  border: 2px solid #5b7cfe;
+}
+
+.cardSecondary:hover {
+  background: #1d1e2c;
+  color: #fcfcfc;
+  border: 2px solid #1d1e2c;;
+}
+
 .disabled {
   background-color: none;
-  border: 2px solid #ADBEFF;
-  color: #ADBEFF;
+  border: 2px solid #adbeff;
+  color: #adbeff;
   pointer-events: none;
 }

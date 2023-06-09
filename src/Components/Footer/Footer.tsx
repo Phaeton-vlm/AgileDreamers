@@ -1,7 +1,4 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import classNames from "classnames";
-import styles from "./Footer.module.css";
 import { AgileDreamers } from "../../Assets/Logo/AgileDreamers";
 import { LogoIconFooter } from "../../Assets/Logo/LogoIconFooter";
 import { LinkedinIcon } from "../../Assets/Footer/LinkedinIcon";
@@ -11,17 +8,9 @@ import { YoutubeIcon } from "../../Assets/Footer/YoutubeIcon";
 import { InstagramIcon } from "../../Assets/Footer/InstagramIcon";
 import { MediumIcon } from "../../Assets/Footer/MediumIcon";
 
+import styles from "./Footer.module.css";
+
 const Footer = () => {
-  const { pathname } = useLocation();
-
-  const CATEGORIES = [
-    { name: "Providers", link: "/" },
-    { name: "For StartUps", link: "/" },
-    { name: "Services", link: "/" },
-    { name: "Developers", link: "/" },
-    { name: "About Us", link: "/" },
-  ];
-
   return (
     <div className={styles.container}>
       <div className={styles.containerTop}>

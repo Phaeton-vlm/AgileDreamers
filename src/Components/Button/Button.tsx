@@ -6,6 +6,8 @@ import styles from "./Button.module.css";
 export enum ButtonTypes {
    Primary = "primary",
    Secondary = "secondary",
+   CardPrimary ="cardPrimary",
+   CardSecondary = "cardSecondary",
 };
 
 type ButtonProps = {
