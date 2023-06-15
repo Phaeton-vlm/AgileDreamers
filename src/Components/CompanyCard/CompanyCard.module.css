@@ -3,6 +3,7 @@
   border: 2px solid #5b7cfe;
   border-radius: 20px;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -61,5 +62,4 @@
 
 .button {
   width: 120px;
-  padding: 16px 40px;
 }

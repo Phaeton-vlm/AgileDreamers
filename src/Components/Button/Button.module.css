@@ -45,7 +45,6 @@
 }
 
 .cardPrimary {
-  padding: 16px 40px;
   background-color: #5b7cfe;
   color: #fcfcfc;
 }
@@ -61,7 +60,6 @@
 }
 
 .cardSecondary {
-  padding: 16px 40px;
   background-color: none;
   color: #5b7cfe;
   border: 2px solid #5b7cfe;
@@ -70,7 +68,7 @@
 .cardSecondary:hover {
   background: #1d1e2c;
   color: #fcfcfc;
-  border: 2px solid #1d1e2c;;
+  border: 2px solid #1d1e2c;
 }
 
 .disabled {

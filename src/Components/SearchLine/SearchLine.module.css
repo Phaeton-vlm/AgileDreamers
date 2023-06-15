@@ -1,0 +1,37 @@
+
+
+.wrap {
+  width: 100vw;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 17px;
+  left: 23.6px;
+}
+
+.checkPicker {
+  width: 280px;
+}
+
+.dropdownMenu {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1d1e2c;
+  width: 280px;
+}

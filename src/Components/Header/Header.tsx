@@ -17,40 +17,42 @@ const Header = () => {
   ];
 
   return (
-    <div className={styles.container}>
-      <div className={styles.containerLogo}>
-        <LogoIconHeader />
-      </div>
+    <div className={styles.wrap}>
+      <div className={styles.container}>
+        <div className={styles.containerLogo}>
+          <LogoIconHeader />
+        </div>
 
-      <div className={styles.containerSidebar}>
-        {CATEGORIES.map(({ link, name }) => {
-          return (
-            <NavLink
-              key={link}
-              to={link}
-              className={classNames(styles.categories, {
-                [styles.activeСategories]: pathname === link,
-              })}
-            >
-              {name}
-            </NavLink>
-          );
-        })}
-      </div>
+        <div className={styles.containerSidebar}>
+          {CATEGORIES.map(({ link, name }) => {
+            return (
+              <NavLink
+                key={link}
+                to={link}
+                className={classNames(styles.categories, {
+                  [styles.activeСategories]: pathname === link,
+                })}
+              >
+                {name}
+              </NavLink>
+            );
+          })}
+        </div>
 
-      <div className={styles.containerButtons}>
-        <Button
-          className={styles.buttonSignIn}
-          title={"Sign In"}
-          type={ButtonTypes.Primary}
-          onClick={() => {}}
-        />
-        <Button
-          className={styles.buttonSignUp}
-          title={"Sign Up"}
-          type={ButtonTypes.Secondary}
-          onClick={() => {}}
-        />
+        <div className={styles.containerButtons}>
+          <Button
+            className={styles.buttonSignIn}
+            title={"Sign In"}
+            type={ButtonTypes.Primary}
+            onClick={() => {}}
+          />
+          <Button
+            className={styles.buttonSignUp}
+            title={"Sign Up"}
+            type={ButtonTypes.Secondary}
+            onClick={() => {}}
+          />
+        </div>
       </div>
     </div>
   );

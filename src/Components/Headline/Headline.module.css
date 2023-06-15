@@ -1,0 +1,75 @@
+.wrap {
+  width: 100vw;
+  background-color: #1d1e2c;
+  padding: 16px 0 120px;
+  margin-bottom: 80px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  opacity: 0;
+  transform: translateY(22%);
+  animation: ani 1.5s forwards;
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  0% {transform: translateY(22%);}
+  100% {transform: translateX(0);}
+}
+
+.ukraine {
+  margin-bottom: 36px;
+}
+
+.containerTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.containerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 74px;
+  line-height: 86px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  text-align: left;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.titleViolet {
+  color: #5b7cfe;
+}
+
+.subTitle {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fcfcfc;
+  opacity: 0.8;
+  text-align: start;
+  max-width: 680px;
+}
+
+.image {
+  display: flex;
+  align-items: flex-end;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}

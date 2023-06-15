@@ -1,9 +1,14 @@
+.wrap {
+  width: 100vw;
+  background-color: #1d1e2c;
+  padding: 20px 0;
+}
+
 .container {
   display: flex;
-  gap: 175px;
-  background-color: #1d1e2c;
-  width: 100%;
-  padding: 20px 310px;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1300px;
 }
 
 .containerLogo {
@@ -37,9 +42,14 @@
 }
 
 .categories:active {
+  color: #fcfcfc;
+  border-bottom: 2px solid #5b7cfe;
+}
+
+/*.activeСategories {
    color: #fcfcfc;
    border-bottom: 2px solid #5B7CFE;
-}
+}*/
 
 .containerButtons {
   display: flex;

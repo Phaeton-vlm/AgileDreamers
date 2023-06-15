@@ -1,6 +1,13 @@
+.wrap {
+  width: 100vw;
+  margin-bottom: 30px;
+}
+
+
 .container {
+  max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  margin: 0 auto;
 }
