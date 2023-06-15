@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Outlet, useParams } from "react-router-dom";
+import Benefits from "../../Components/Benefits";
 import CompanyCardList from "../../Components/CompanyCardList";
 import Headline from "../../Components/Headline";
 import SearchLine from "../../Components/SearchLine";
@@ -28,6 +29,7 @@ const Home = () => {
         <Headline />
         <SearchLine />
         <CompanyCardList cardsList={MOCK_CARD_LIST} />
+        <Benefits />
       </div>
     </>
   );

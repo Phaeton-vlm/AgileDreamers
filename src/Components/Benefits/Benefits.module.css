@@ -1,0 +1,95 @@
+.wrap {
+  width: 100vw;
+  margin-bottom: 160px;
+}
+
+.container {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.containerBenefit {
+  width: 301px;
+  height: 295px;
+  border-radius: 20px;
+  background-color: #1d1e2c;
+  box-sizing: border-box;
+}
+
+.icon {
+  display: flex;
+  justify-content: start;
+  margin: 24px;
+  margin-bottom: 32px;
+  width: 48px;
+  height: 48px;
+}
+
+.title {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fcfcfc;
+  text-align: start;
+  padding-left: 24px;
+  margin-bottom: 4px;
+}
+.subtitle {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fcfcfc;
+  text-align: start;
+  padding: 0 24px;
+}
+
+.arrowOne {
+  position: absolute;
+  z-index: 100;
+  right: 24px;
+  bottom: 59px;
+}
+
+.arrowTwo {
+  position: absolute;
+  z-index: 100;
+  right: 36px;
+  bottom: 36px;
+}
+
+.blueText {
+  color: #5b7cfe;
+}
+
+.darkContainerBenefit {
+  position: relative;
+}
+
+.blueLine {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+}
+
+.blueContainerBenefit {
+  position: relative;
+  background: #5b7cfe;
+}
+
+.whiteContainerBenefit {
+  background: none;
+  border: 3px solid #5b7cfe;
+  position: relative;
+}
+
+.whiteLines {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
