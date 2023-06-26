@@ -1,0 +1,39 @@
+.wrap {
+  width: 100vw;
+  background-color: #1d1e2c;
+  padding-top: 100px;
+  padding-bottom: 160px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  text-align: start;
+}
+
+.title {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #fcfcfc;
+  border-bottom: 4px solid #5B7CFE;
+  width: max-content;
+  margin-bottom: 80px;
+}
+
+.containerIcon {
+  display: flex;
+  gap: 40px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 108px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

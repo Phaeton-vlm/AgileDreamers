@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowIcon } from "../../Assets/ContactBlock/ArrowIcon";
 import { LineIcon } from "../../Assets/ContactBlock/LineIcon";
 import Button, { ButtonTypes } from "../Button";
@@ -45,10 +45,25 @@ const ContactBlock = () => {
 
         <div className={styles.containerContact}>
           <div className={styles.containerForm}>
-            <Input value={""} onChange={() => {}} placeholder={"Name"} type={InputTypes.InputType}/>
-            <Input value={""} onChange={() => {}} placeholder={"Email"} type={InputTypes.InputType}/>
-            <Input value={""} onChange={() => {}} placeholder={"Phone"} type={InputTypes.InputType}/>
-            <Input value={""} onChange={() => {}} placeholder={"Phone"} type={InputTypes.InputType}/>
+            <Input
+              value={""}
+              onChange={() => {}}
+              placeholder={"Name"}
+              type={InputTypes.InputType}
+            />
+            <Input
+              value={""}
+              onChange={() => {}}
+              placeholder={"Email"}
+              type={InputTypes.InputType}
+            />
+            <Input
+              value={""}
+              onChange={() => {}}
+              placeholder={"Phone"}
+              type={InputTypes.InputType}
+            />
+      
             <Input
               value={""}
               onChange={() => {}}

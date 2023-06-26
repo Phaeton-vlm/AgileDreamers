@@ -5,6 +5,7 @@ import Benefits from "../../Components/Benefits";
 import CompanyCardList from "../../Components/CompanyCardList";
 import Headline from "../../Components/Headline";
 import SearchLine from "../../Components/SearchLine";
+import ToolsWeUse from "../../Components/ToolsWeUse";
 
 import styles from "./Home.module.css";
 
@@ -30,6 +31,7 @@ const Home = () => {
         <SearchLine />
         <CompanyCardList cardsList={MOCK_CARD_LIST} />
         <Benefits />
+        <ToolsWeUse />
       </div>
     </>
   );
