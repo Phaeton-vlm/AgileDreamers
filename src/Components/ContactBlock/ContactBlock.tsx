@@ -7,8 +7,6 @@ import { InputTypes } from "../Input/Input";
 import Multiselect from "multiselect-react-dropdown";
 
 import styles from "./ContactBlock.module.css";
-import { style } from "@mui/system";
-import { Hidden } from "@mui/material";
 
 const ContactBlock = () => {
   const keyAreas = [
