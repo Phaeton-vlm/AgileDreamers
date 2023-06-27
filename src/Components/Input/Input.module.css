@@ -11,7 +11,8 @@
   line-height: 28px;
   color: #fcfcfc;
   padding-left: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
 }
 
 .inputType::placeholder {
@@ -20,7 +21,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #fcfcfc;
+  color: rgba(252, 252, 252, 0.64);
 }
 
 .inputType:hover {

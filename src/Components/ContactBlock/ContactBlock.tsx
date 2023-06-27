@@ -4,10 +4,22 @@ import { LineIcon } from "../../Assets/ContactBlock/LineIcon";
 import Button, { ButtonTypes } from "../Button";
 import Input from "../Input";
 import { InputTypes } from "../Input/Input";
+import Multiselect from "multiselect-react-dropdown";
 
 import styles from "./ContactBlock.module.css";
+import { style } from "@mui/system";
+import { Hidden } from "@mui/material";
 
 const ContactBlock = () => {
+  const keyAreas = [
+    { name: "Platform Development", id: 1 },
+    { name: "Software Development", id: 2 },
+    { name: "Mobile App Development", id: 3 },
+    { name: "FinTech Development", id: 4 },
+    { name: "AR/VR", id: 5 },
+    { name: "AI - Artificial Intelligence", id: 6 },
+    { name: "Blockchain Development", id: 7 },
+  ];
 
   return (
     <div className={styles.wrap}>
@@ -63,7 +75,47 @@ const ContactBlock = () => {
               placeholder={"Phone"}
               type={InputTypes.InputType}
             />
-      
+            <Multiselect
+              options={keyAreas}
+              displayValue="name"
+              showCheckbox={true}
+              placeholder="Key Areas"
+              customArrow={<ArrowIcon />}
+              className={styles.keyAreas}
+              style={{
+                searchBox: {
+                  "border": "none",
+                  "border-bottom": "none",
+                  "border-radius": "0px",
+                  "color": "rgba(252, 252, 252, 0.64)",
+                  "padding": "1px 2px 12px 16px",
+                },
+                inputField: {
+                  "font-size": "20px",
+                  "font-family": "Karla",
+                  "line-height": "28px",
+                  "color": "rgba(252, 252, 252, 0.64)",
+                  "width": "660px"
+                },
+                chips: {
+                  "background": "transparent",
+                },
+                multiselectContainer: {
+                  "color": "#1D1E2C",
+                  "font-size": "16px",
+                  "font-family": "Karla",
+                  "line-height": "20px",
+                  "height": "100%",
+                  
+                },
+                optionContainer: {
+                  "border-radius": "10px",
+                  "max-height": "100%",
+                  "background": "#F4F4F4",
+                }
+              }}
+            />
+
             <Input
               value={""}
               onChange={() => {}}

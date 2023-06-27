@@ -105,3 +105,12 @@
   line-height: 20px;
   color: #fcfcfc;
 }
+
+.keyAreas {
+  border-bottom: 1px solid #FCFCFC;
+  width: 660px;
+}
+
+.keyAreas:hover {
+  border-bottom: 1px solid #5b7cfe;
+}
