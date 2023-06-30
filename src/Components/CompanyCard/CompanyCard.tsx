@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import styles from "./CompanyCard.module.css";
 import { CompanyCardType } from "../../Constants/@types";
@@ -9,6 +10,7 @@ import { ClockIcon } from "../../Assets/CompanyCard/ClockIcon";
 import { LocationIcon } from "../../Assets/CompanyCard/LocationIcon";
 
 import Button, { ButtonTypes } from "../Button";
+import { PathNames } from "../../Pages/Router/Router";
 
 type CompanyCardProps = {
   card: CompanyCardType;
@@ -19,6 +21,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
     id,
     companyName,
     companyDescription,
+    fullCompanyDescription,
     budget,
     teamSize,
     foundationDate,
@@ -26,7 +29,12 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
     location,
   } = card;
 
+  const navigate = useNavigate();
+  const onMoreClick = () => {
+    navigate(PathNames.CompanyPage)};
+
   return (
+        
     <div className={styles.card}>
       <div className={styles.title}>{companyName}</div>
 
@@ -67,12 +75,14 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
           type={ButtonTypes.CardSecondary}
           onClick={() => {}}
         />
-        <Button
-          className={styles.button}
-          title={"More about"}
-          type={ButtonTypes.CardSecondary}
-          onClick={() => {}}
-        />
+
+          <Button
+            className={styles.button}
+            title={"More about"}
+            type={ButtonTypes.CardSecondary}
+            onClick={onMoreClick}
+          />
+ 
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { LogoIconHeader } from "../../Assets/Logo/LogoIconHeader";
 import { NavLink, useLocation } from "react-router-dom";
+import { PathNames } from '../../Pages/Router/Router';
 import classNames from "classnames";
 import styles from "./Header.module.css";
 import Button, { ButtonTypes } from "../Button";
@@ -20,7 +21,7 @@ const Header = () => {
     <div className={styles.wrap}>
       <div className={styles.container}>
         <div className={styles.containerLogo}>
-          <LogoIconHeader />
+        <NavLink to={PathNames.Home}> <LogoIconHeader /> </NavLink>
         </div>
 
         <div className={styles.containerSidebar}>

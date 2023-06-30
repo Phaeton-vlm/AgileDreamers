@@ -46,10 +46,10 @@
   border-bottom: 2px solid #5b7cfe;
 }
 
-/*.activeСategories {
+.activeСategories {
    color: #fcfcfc;
    border-bottom: 2px solid #5B7CFE;
-}*/
+}
 
 .containerButtons {
   display: flex;

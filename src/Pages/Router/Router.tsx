@@ -8,13 +8,13 @@ import {
 } from "react-router-dom";
 
 import PagesWrapper from "../PagesWrapper";
-import Home from "../Home";
-import Ukraine from "../../Components/Ukraine";
 import ProvidersPage from "../ProvidersPage";
+import CompanyPage from "../CompanyPage";
 
 export enum PathNames {
   Home = "/",
   Providers = "/providers",
+  CompanyPage = "/company-page",
   ForStartUps = "/startups",
   Services = "/services",
   Developers = "/developers",
@@ -41,6 +41,7 @@ const Router = () => {
       <Routes>
         <Route path={PathNames.Home} element={<PagesWrapper />}>
           <Route path={PathNames.Providers} element={<ProvidersPage />} />
+          <Route path={PathNames.CompanyPage} element={<CompanyPage />} />
         </Route>
 
         <Route path="*" element={<Navigate to={PathNames.Providers} />} />

@@ -1,0 +1,195 @@
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  margin-top: 48px;
+  margin-bottom: 160px;
+}
+
+.containerButton {
+  margin-bottom: 30px;
+  width: max-content;
+}
+
+.buttonName {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.containerCompanyInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+  text-align: start;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 530px;
+}
+
+.companyName {
+  color: #305afe;
+  font-size: 42px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+}
+
+.companyDescription {
+  color: #1d1e2c;
+  font-size: 16px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.title {
+  color: #1d1e2c;
+  font-size: 24px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.link {
+  color: #5b7cfe;
+  font-size: 16px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.companyCard {
+  padding: 48px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 2px solid #5b7cfe;
+  width: 665px;
+}
+
+.containerAnswers {
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(29, 30, 44, 0.16);
+  margin-bottom: 40px;
+}
+
+.answers {
+  display: flex;
+  gap: 62.4px;
+  margin-bottom: 16px;
+}
+
+.answer {
+  display: flex;
+  gap: 10.4px;
+  justify-content: start;
+  align-items: center;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1d1e2c;
+  min-width: 100px;
+}
+
+.reviewer {
+  color: #1d1e2c;
+  font-size: 24px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.contactsBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personBlock {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: url("../../Assets/CompanyPage/avatar.png") center;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  box-sizing: border-box;
+  max-height: 56px;
+}
+
+.containerSpecializes {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.titleSpecializes {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #5b7cfe;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #1d1e2c;
+  text-align: start;
+  max-width: 1100px;
+}
+
+.areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.areaBlue {
+  padding: 16px 32px;
+  border-radius: 100px;
+  background: #5b7cfe;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  color: #fcfcfc;
+  font-size: 24px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+
+.area {
+  padding: 16px 32px;
+  border-radius: 100px;
+  border: 2px solid #5B7CFE;
+  color: #1D1E2C;
+  font-size: 24px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}

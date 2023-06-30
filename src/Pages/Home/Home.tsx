@@ -19,6 +19,8 @@ const MOCK_CARD = {
   foundationDate: 1991,
   averageHourlyRate: "150",
   location: "Melbourne",
+  fullCompanyDescription: "",
+  softwareStack: [],
 };
 
 const MOCK_CARD_LIST = [MOCK_CARD, MOCK_CARD, MOCK_CARD, MOCK_CARD];
