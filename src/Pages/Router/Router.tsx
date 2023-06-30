@@ -10,6 +10,7 @@ import {
 import PagesWrapper from "../PagesWrapper";
 import Home from "../Home";
 import Ukraine from "../../Components/Ukraine";
+import ProvidersPage from "../ProvidersPage";
 
 export enum PathNames {
   Home = "/",
@@ -39,8 +40,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path={PathNames.Home} element={<PagesWrapper />}>
-          <Route path={PathNames.Providers} element={<Ukraine />} />
-          <Route path={PathNames.ForStartUps} element={<Ukraine />} />
+          <Route path={PathNames.Providers} element={<ProvidersPage />} />
         </Route>
 
         <Route path="*" element={<Navigate to={PathNames.Providers} />} />

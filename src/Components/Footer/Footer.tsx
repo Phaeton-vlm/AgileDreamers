@@ -44,7 +44,7 @@ const Footer = () => {
               <div className={styles.text}>Telegram: @AgileDreamers</div>
               <div className={styles.text}>contact@agiledreamers.com</div>
               <div className={styles.icons}>
-                <LinkedinIcon /> <FacebookIcon /> <TwitterIcon />{" "}
+                <LinkedinIcon /> <FacebookIcon /> <TwitterIcon />
                 <YoutubeIcon />
                 <InstagramIcon />
                 <MediumIcon />

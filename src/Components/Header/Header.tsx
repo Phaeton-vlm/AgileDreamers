@@ -9,7 +9,7 @@ const Header = () => {
   const { pathname } = useLocation();
 
   const CATEGORIES = [
-    { name: "Providers", link: "/" },
+    { name: "Providers", link: "/providers" },
     { name: "For StartUps", link: "/" },
     { name: "Services", link: "/" },
     { name: "Developers", link: "/" },

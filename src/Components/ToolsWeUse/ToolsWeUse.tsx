@@ -21,53 +21,80 @@ const ToolsWeUse = () => {
     <div className={styles.wrap}>
       <div className={styles.container}>
         <div className={styles.title}>Tools we use</div>
-        <div className={styles.containerIcon}>
-          
-          <Marquee>
-            <div className={styles.icon}>
+
+        <Marquee className={styles.containerIcon}>
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <PyTorch />
-              PyTorch
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>PyTorch</span>
+          </div>
+
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <MongoDB />
-              MongoDB
-            </div>
-            <div className={styles.icon}>
-              <Miro /> Miro
-            </div>
-            <div className={styles.icon}>
-              <Jira /> Jira
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>MongoDB</span>
+          </div>
+
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
+              <Miro />
+            </span>{" "}
+            <span className={styles.iconName}>Miro</span>
+          </div>
+
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
+              <Jira />
+            </span>{" "}
+            <span className={styles.iconName}>Jira</span>
+          </div>
+
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <GitHub />
-              GitHub
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>GitHub</span>
+          </div>
+
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <Canvas />
-              Canvas
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>Canvas</span>
+          </div>
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <Figma />
-              Figma
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>Figma</span>
+          </div>
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <Python />
-              Python
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>Python</span>
+          </div>
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <ReactJS />
-              React JS
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>React JS</span>
+          </div>
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <Kotlin />
-              Kotlin
-            </div>
-            <div className={styles.icon}>
+            </span>
+            <span className={styles.iconName}>Kotlin</span>
+          </div>
+          <div className={styles.iconContainer}>
+            <span className={styles.icon}>
               <NodeJS />
-              Node.js
-            </div>
-          </Marquee>
-        </div>
+            </span>
+            <span className={styles.iconName}>Node.js</span>
+          </div>
+        </Marquee>
       </div>
     </div>
   );
