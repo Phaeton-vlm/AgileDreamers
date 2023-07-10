@@ -11,10 +11,10 @@ const Header = () => {
 
   const CATEGORIES = [
     { name: "Providers", link: "/providers" },
-    { name: "For StartUps", link: "/" },
-    { name: "Services", link: "/" },
-    { name: "Developers", link: "/" },
-    { name: "About Us", link: "/" },
+    { name: "For StartUps", link: "/startups" },
+    { name: "Services", link: "/services" },
+    { name: "Developers", link: "/developers" },
+    { name: "About Us", link: "/about" },
   ];
 
   return (
