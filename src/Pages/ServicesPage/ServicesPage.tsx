@@ -1,15 +1,15 @@
 import classNames from "classnames";
 import React from "react";
 import { ArrowWhite } from "../../Assets/CompanyPage/ArrowWhite";
-import { ArrowDown } from "../../Assets/Services/ArrowDown";
-import { Eight } from "../../Assets/Services/Eight";
-import { Five } from "../../Assets/Services/Five";
-import { Four } from "../../Assets/Services/Four";
-import { One } from "../../Assets/Services/One";
-import { Seven } from "../../Assets/Services/Seven";
-import { Six } from "../../Assets/Services/Six";
-import { Three } from "../../Assets/Services/Three";
-import { Two } from "../../Assets/Services/Two";
+import { ArrowDown } from "../../Assets/ServicesPage/ArrowDown";
+import { Eight } from "../../Assets/ServicesPage/Eight";
+import { Five } from "../../Assets/ServicesPage/Five";
+import { Four } from "../../Assets/ServicesPage/Four";
+import { One } from "../../Assets/ServicesPage/One";
+import { Seven } from "../../Assets/ServicesPage/Seven";
+import { Six } from "../../Assets/ServicesPage/Six";
+import { Three } from "../../Assets/ServicesPage/Three";
+import { Two } from "../../Assets/ServicesPage/Two";
 
 import styles from "./ServicesPage.module.css";
 
@@ -29,14 +29,14 @@ const StrongExpertise = [
 ];
 
 const saasSolutions = [
-  { icon: <One />, name: "Project Management Software " },
-  { icon: <Two />, name: "Customer Relationship Management (CRM) " },
-  { icon: <Three />, name: "Enterprise Resource Planning (ERP) " },
-  { icon: <Four />, name: "Content Management System (CMS) " },
-  { icon: <Five />, name: "Sales CRM" },
-  { icon: <Six />, name: "Marketing analytics" },
-  { icon: <Seven />, name: "BI SaaS" },
-  { icon: <Eight />, name: "AI Data Science" },
+  { icon: <One />, name: "Project Management Software" },
+  { icon: <Two />, name: "Customer Relationship Management (CRM)" },
+  { icon: <Three />, name: "Enterprise Resource Planning (ERP)" },
+  { icon: <Four />, name: "Content Management System (CMS)" },
+  { icon: <Five />, name: "Sales CRM"},
+  { icon: <Six />, name: "Marketing analytics"},
+  { icon: <Seven />, name: "BI SaaS"},
+  { icon: <Eight />, name: "AI Data Science"},
 ];
 
 const ServicesPage = () => {
