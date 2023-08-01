@@ -2,6 +2,8 @@ import React from "react";
 import CompanyCardList from "../../Components/CompanyCardList";
 import SearchLine from "../../Components/SearchLine";
 
+import styles from "./ProvidersPage.module.css";
+
 const MOCK_CARD = {
   id: 1,
   companyName: "Capix",
@@ -21,7 +23,7 @@ const MOCK_CARD_LIST = [MOCK_CARD, MOCK_CARD, MOCK_CARD, MOCK_CARD];
 
 const ProvidersPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <SearchLine />
       <CompanyCardList cardsList={MOCK_CARD_LIST} />
     </div>

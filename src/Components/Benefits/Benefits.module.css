@@ -1,6 +1,5 @@
 .wrap {
   width: 100vw;
-  margin-bottom: 160px;
 }
 
 .container {
@@ -16,6 +15,7 @@
   border-radius: 20px;
   background-color: #1d1e2c;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .icon {

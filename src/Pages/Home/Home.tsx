@@ -29,9 +29,11 @@ const Home = () => {
   return (
     <>
       <div className={styles.container}>
-        <Headline />
-        <SearchLine />
-        <CompanyCardList cardsList={MOCK_CARD_LIST} />
+        <div>
+          <Headline />
+          <SearchLine />
+          <CompanyCardList cardsList={MOCK_CARD_LIST} />
+        </div>
         <Benefits />
         <ToolsWeUse />
       </div>

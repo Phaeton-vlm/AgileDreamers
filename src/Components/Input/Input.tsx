@@ -1,6 +1,5 @@
 import React, { FC, ChangeEvent, ReactElement } from "react";
 
-import classNames from "classnames";
 import styles from "./Input.module.css";
 import classnames from "classnames";
 import { ErrorIcon } from "../../Assets/Footer/ErrorIcon";
