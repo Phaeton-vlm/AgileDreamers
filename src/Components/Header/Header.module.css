@@ -1,14 +1,15 @@
 .wrap {
   width: 100vw;
   background-color: #1d1e2c;
-  padding: 20px 0;
+  padding: 8px 0;
 }
 
 .container {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  max-width: 1300px;
+  align-items: center;
+  max-width: 1216px;
 }
 
 .containerLogo {
@@ -17,28 +18,21 @@
 
 .containerSidebar {
   display: flex;
-  gap: 32px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
 }
 
 .categories {
   text-decoration: none;
-  width: 100px;
-  height: 20px;
-  font-family: "Karla";
+  font-family: Karla;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: 400;
+  line-height: 24px;
   text-align: center;
   color: #fcfcfc;
   transition: all 0.5s;
-  padding-bottom: 8px;
-}
-
-.categories:hover {
-  color: #5b7cfe;
 }
 
 .categories:active {
@@ -47,20 +41,17 @@
 }
 
 .activeСategories {
-   color: #fcfcfc;
-   border-bottom: 2px solid #5B7CFE;
+  color: #fcfcfc;
+  border-bottom: 2px solid #5b7cfe;
 }
 
 .containerButtons {
   display: flex;
-  gap: 20px;
+  gap: 32px;
 }
 
-.buttonSignIn {
-  width: 114px;
-  text-align: center;
+.button {
+  width: 96px;
+
 }
 
-.buttonSignUp {
-  width: 114px;
-}

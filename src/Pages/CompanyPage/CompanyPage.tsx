@@ -55,7 +55,7 @@ const CompanyPage = () => {
               <ArrowReturn /> Return
             </div>
           }
-          type={ButtonTypes.CardSecondary}
+          type={ButtonTypes.SmallSecondary}
           onClick={() => {}}
         />
       </div>
@@ -109,7 +109,7 @@ const CompanyPage = () => {
               <Button
                 className={styles.button}
                 title={"Contact"}
-                type={ButtonTypes.CardPrimary}
+                type={ButtonTypes.SmallPrimary}
                 onClick={() => {}}
               />
             </div>

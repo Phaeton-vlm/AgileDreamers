@@ -5,7 +5,7 @@ import styles from './Ukraine.module.css';
 const Ukraine = () => {
    return (
       <div className={styles.container}>
-         We support <span className={styles.ukraine}>Ukraine</span> <UkraineIcon />
+         <div>We support <span className={styles.ukraine}>Ukraine</span></div><UkraineIcon />
       </div>
    );
 };

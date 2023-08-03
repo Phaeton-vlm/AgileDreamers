@@ -19,9 +19,9 @@ const Headline = () => {
         <div className={styles.containerTop}>
           <div className={styles.text}>
             <div className={styles.title}>
-              Efficient digital{" "}
-              <span className={styles.titleViolet}>solutions</span> with Agile
-              Dreamers
+            Dedicated digital{" "}
+              <span className={styles.titleViolet}>solutions</span> <br /> with <span className={styles.titleViolet}>Agile
+              Dreamers</span>
             </div>
             <div className={styles.subTitle}>
               Agile Dreamer Platform is a set of unique focused SaaS services
@@ -39,25 +39,25 @@ const Headline = () => {
         <div className={styles.containerBottom}>
           <div className={styles.buttons}>
           <Button
-            className={styles.buttonSignIn}
+            className={styles.button}
             title={"Service Providers"}
-            type={ButtonTypes.Primary}
+            type={ButtonTypes.BigPrimary}
             onClick={() => {}}
           />
           <Button
-            className={styles.buttonSignUp}
+            className={styles.button}
             title={"Become a Provider"}
-            type={ButtonTypes.Secondary}
+            type={ButtonTypes.BigSecondary}
             onClick={() => {}}
           />
                     <Button
-            className={styles.buttonSignUp}
+            className={styles.buttonBig}
             title={"Become a Freelance Developer"}
-            type={ButtonTypes.Secondary}
+            type={ButtonTypes.BigSecondary}
             onClick={() => {}}
           />
           </div>
-          <div>
+          <div className={styles.line}>
             <Line />
           </div>
         </div>

@@ -42,15 +42,15 @@ const Header = () => {
 
         <div className={styles.containerButtons}>
           <Button
-            className={styles.buttonSignIn}
+            className={styles.button}
             title={"Sign In"}
-            type={ButtonTypes.Primary}
+            type={ButtonTypes.BigPrimary}
             onClick={() => {}}
           />
           <Button
-            className={styles.buttonSignUp}
+            className={styles.button}
             title={"Sign Up"}
-            type={ButtonTypes.Secondary}
+            type={ButtonTypes.BigSecondary}
             onClick={() => {}}
           />
         </div>

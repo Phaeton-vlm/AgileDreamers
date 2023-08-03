@@ -35,7 +35,7 @@ const ContactBlock = () => {
                 <ArrowIcon />
               </div>
             }
-            type={ButtonTypes.Secondary}
+            type={ButtonTypes.BigSecondary}
             onClick={() => {}}
           />
           <div className={styles.advantages}>Data Science and AI</div>

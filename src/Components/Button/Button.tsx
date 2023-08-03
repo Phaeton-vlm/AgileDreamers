@@ -4,10 +4,10 @@ import classNames from "classnames";
 import styles from "./Button.module.css";
 
 export enum ButtonTypes {
-   Primary = "primary",
-   Secondary = "secondary",
-   CardPrimary ="cardPrimary",
-   CardSecondary = "cardSecondary",
+   BigPrimary = "bigPrimary",
+   BigSecondary = "bigSecondary",
+   SmallPrimary ="smallPrimary",
+   SmallSecondary = "smallSecondary",
 };
 
 type ButtonProps = {

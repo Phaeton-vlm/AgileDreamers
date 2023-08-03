@@ -57,7 +57,7 @@ const StartUpsPage = () => {
             <Button
               className={styles.buttonSignIn}
               title={"Become a Startup Program"}
-              type={ButtonTypes.Primary}
+              type={ButtonTypes.BigPrimary}
               onClick={() => {}}
             />
             <HeadLine />

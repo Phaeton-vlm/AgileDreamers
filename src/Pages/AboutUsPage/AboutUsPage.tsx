@@ -35,19 +35,19 @@ const AboutUsPage = () => {
                 <Button
                   className={styles.buttonSignIn}
                   title={"Service Providers"}
-                  type={ButtonTypes.Primary}
+                  type={ButtonTypes.BigPrimary}
                   onClick={() => {}}
                 />
                 <Button
                   className={styles.buttonSignUp}
                   title={"Become a Provider"}
-                  type={ButtonTypes.Secondary}
+                  type={ButtonTypes.BigSecondary}
                   onClick={() => {}}
                 />
                 <Button
                   className={styles.buttonSignUp}
                   title={"Become a Freelance Developer"}
-                  type={ButtonTypes.Secondary}
+                  type={ButtonTypes.BigSecondary}
                   onClick={() => {}}
                 />
               </div>

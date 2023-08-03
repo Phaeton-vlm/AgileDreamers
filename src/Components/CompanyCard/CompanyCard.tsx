@@ -66,20 +66,20 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
         <Button
           className={styles.button}
           title={"Visit Website"}
-          type={ButtonTypes.CardPrimary}
+          type={ButtonTypes.SmallPrimary}
           onClick={() => {}}
         />
         <Button
           className={styles.button}
           title={"Chat"}
-          type={ButtonTypes.CardSecondary}
+          type={ButtonTypes.SmallSecondary}
           onClick={() => {}}
         />
 
           <Button
             className={styles.button}
             title={"More about"}
-            type={ButtonTypes.CardSecondary}
+            type={ButtonTypes.SmallSecondary}
             onClick={onMoreClick}
           />
  
