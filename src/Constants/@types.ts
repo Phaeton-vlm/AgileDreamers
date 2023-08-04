@@ -9,6 +9,7 @@ export type CompanyCardType = {
   averageHourlyRate: string;
   location: string;
   softwareStack: Array<string>;
+  avatar: string;
 };
 
 export type CompanyCardListType = Array<CompanyCardType>;

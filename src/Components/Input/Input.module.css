@@ -105,24 +105,26 @@ input:focus:-ms-input-placeholder {
   background: rgba(29, 30, 44, 0.04);
   border-radius: 1000px;
   border: 1px solid transparent;
-  width: 370px;
-  height: 56px;
-  font-family: "Karla";
+  width: 352px;
+  height: 48px;
+  font-family: Karla;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
   color: #000000;
-  padding-left: 52px;
+  padding: 12px 20px 12px 52px;
   box-sizing: border-box;
 }
 
 .searchType::placeholder {
-  font-family: "Karla";
+  font-family: Karla;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
   color: #9a9a9a;
   display: flex;
   align-items: end;

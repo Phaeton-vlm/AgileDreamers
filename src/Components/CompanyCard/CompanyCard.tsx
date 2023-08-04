@@ -5,12 +5,11 @@ import styles from "./CompanyCard.module.css";
 import { CompanyCardType } from "../../Constants/@types";
 import { BudgetIcon } from "../../Assets/CompanyCard/BudgetIcon";
 import { PeoplesIcon } from "../../Assets/CompanyCard/PeoplesIcon";
-import { FlagIcon } from "../../Assets/CompanyCard/FlagIcon";
 import { ClockIcon } from "../../Assets/CompanyCard/ClockIcon";
-import { LocationIcon } from "../../Assets/CompanyCard/LocationIcon";
 
 import Button, { ButtonTypes } from "../Button";
 import { PathNames } from "../../Pages/Router/Router";
+import classNames from "classnames";
 
 type CompanyCardProps = {
   card: CompanyCardType;
@@ -27,48 +26,62 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
     foundationDate,
     averageHourlyRate,
     location,
+    avatar,
   } = card;
 
   const navigate = useNavigate();
   const onMoreClick = () => {
-    navigate(PathNames.CompanyPage)};
+    navigate(PathNames.CompanyPage);
+  };
 
   return (
-        
     <div className={styles.card}>
-      <div className={styles.title}>{companyName}</div>
-
-      <div className={styles.text}>{companyDescription}</div>
-
-      <div className={styles.containerAnswers}>
-        <div className={styles.answers}>
-          <div className={styles.answer}>
-            <BudgetIcon /> <div>{budget}</div>
+      <div className={styles.first}>
+        <div><img src={avatar} className={styles.avatar} /></div>
+        <div className={styles.info}>
+          <div>
+            <div className={classNames(styles.data, styles.firstInfo)}>
+              <div className={styles.data}>{location},</div><div className={styles.data}>{foundationDate}</div>
+            </div>
+            <div className={styles.title}>{companyName}</div>
           </div>
-          <div className={styles.answer}>
-            <PeoplesIcon /> <div>{teamSize}</div>
-          </div>
-          <div className={styles.answer}>
-            <FlagIcon /> <div>{foundationDate}</div>
-          </div>
-        </div>
-        <div className={styles.answers}>
-          <div className={styles.answer}>
-            <ClockIcon /> <div>{averageHourlyRate}</div>
-          </div>
-          <div className={styles.answer}>
-            <LocationIcon /> <div>{location}</div>
+          <div className={classNames(styles.data, styles.secondInfo)}>
+            <div className={styles.containerAnswers}>
+              <div className={styles.answers}><PeoplesIcon /> <span>{teamSize}</span></div>
+              <div className={styles.answers}><BudgetIcon /> <span>{budget}</span></div>
+              <div className={styles.answers}><ClockIcon /> <span>{averageHourlyRate} per/h</span></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className={styles.containerButtons}>
-        <Button
+
+      <div className={styles.second}>
+        <div className={styles.text}>{companyDescription}</div>
+      </div>
+
+      <div className={styles.third}>
+      <Button
           className={styles.button}
-          title={"Visit Website"}
+          title={"Open chat"}
           type={ButtonTypes.SmallPrimary}
           onClick={() => {}}
         />
+
+          <Button
+            className={styles.button}
+            title={"More info"}
+            type={ButtonTypes.SmallSecondary}
+            onClick={onMoreClick}
+          />
+      </div>
+    </div>
+  );
+};
+
+export default CompanyCard;
+/*
+        
         <Button
           className={styles.button}
           title={"Chat"}
@@ -78,14 +91,9 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
 
           <Button
             className={styles.button}
-            title={"More about"}
+            title={"More info"}
             type={ButtonTypes.SmallSecondary}
             onClick={onMoreClick}
           />
  
-      </div>
-    </div>
-  );
-};
-
-export default CompanyCard;
+      </div>*/

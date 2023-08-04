@@ -1,12 +1,12 @@
 .wrap {
   width: 100vw;
   margin-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 64px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1216px;
   display: flex;
   justify-content: space-between;
   opacity: 0;
@@ -26,20 +26,21 @@
 
 .searchIcon {
   position: absolute;
-  top: 17px;
-  left: 23.6px;
+  top: 12px;
+  left: 20px;
 }
 
 .checkPicker {
-  width: 280px;
+  width: 256px;
+  height: 48px;
 }
 
 .dropdownMenu {
-  font-family: "Karla";
+  font-family: Karla;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.08px;
   color: #1d1e2c;
-  width: 280px;
 }

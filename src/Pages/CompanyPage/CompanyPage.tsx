@@ -2,8 +2,6 @@ import React from "react";
 import { ArrowReturn } from "../../Assets/CompanyPage/ArrowReturn";
 import { BudgetIcon } from "../../Assets/CompanyCard/BudgetIcon";
 import { ClockIcon } from "../../Assets/CompanyCard/ClockIcon";
-import { FlagIcon } from "../../Assets/CompanyCard/FlagIcon";
-import { LocationIcon } from "../../Assets/CompanyCard/LocationIcon";
 import { PeoplesIcon } from "../../Assets/CompanyCard/PeoplesIcon";
 import Button, { ButtonTypes } from "../../Components/Button";
 
@@ -42,6 +40,7 @@ const MOCK_CARD = {
     {name: "React Native"},
     {name: "MS Azure services"},
   ],
+  avatar: "https://pibig.info/uploads/posts/2022-03/1648204988_5-pibig-info-p-kvadratnaya-priroda-priroda-krasivo-foto-6.jpg",
 };
 
 const CompanyPage = () => {
@@ -83,7 +82,7 @@ const CompanyPage = () => {
                 <PeoplesIcon /> <div>{MOCK_CARD.teamSize}</div>
               </div>
               <div className={styles.answer}>
-                <FlagIcon /> <div>{MOCK_CARD.foundationDate}</div>
+                 <div>{MOCK_CARD.foundationDate}</div>
               </div>
             </div>
             <div className={styles.answers}>
@@ -91,7 +90,7 @@ const CompanyPage = () => {
                 <ClockIcon /> <div>{MOCK_CARD.averageHourlyRate}</div>
               </div>
               <div className={styles.answer}>
-                <LocationIcon /> <div>{MOCK_CARD.location}</div>
+                 <div>{MOCK_CARD.location}</div>
               </div>
             </div>
           </div>

@@ -11,17 +11,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .bigPrimary {
-  background-color: #5B7CFE;
+  background-color: #5b7cfe;
   height: 32px;
 }
 
 .bigPrimary:hover {
-  background-color: #EBEFFF;
-  color: #5B7CFE;
+  background-color: #ebefff;
+  color: #5b7cfe;
 }
 
 .bigSecondary {
@@ -36,26 +35,38 @@
   color: #5b7cfe;
 }
 
-.cardPrimary {
+.smallPrimary {
   background-color: #5b7cfe;
   color: #fcfcfc;
+  font-family: Karla;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  border: 1px solid #5b7cfe;
 }
 
-.cardPrimary:hover {
-  background-color: #EBEFFF;
-  color: #5B7CFE;
+.smallPrimary:hover {
+  background-color: #ebefff;
+  color: #5b7cfe;
+  border: 1px solid #ebefff;
 }
 
-.cardSecondary {
+.smallSecondary {
   background-color: none;
   color: #5b7cfe;
-  border: 2px solid #5b7cfe;
+  border: 1px solid #5b7cfe;
+  font-family: Karla;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
 }
 
-.cardSecondary:hover {
+.smallSecondary:hover {
   background: #1d1e2c;
   color: #fcfcfc;
-  border: 2px solid #1d1e2c;
+  border: 1px solid #1d1e2c;
 }
 
 .disabled {
