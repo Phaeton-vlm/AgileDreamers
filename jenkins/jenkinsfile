@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+    environment {
+        MAJOR = "0"
+        MINOR = "0"
+        PATCH = "${env.BUILD_ID}"
+        TAG = "${MAJOR}.${MINOR}.${PATCH}"
+        IMAGE = "web-alpine"
+        FULL_IMAGE = "${env.AGILEDREAMERS_REGISTRY}${IMAGE}:${TAG}"
+    }
+
+    stages {
+
+        stage('Build') {
+            steps {
+                sh """
+                    echo "${FULL_IMAGE}"
+                    docker build -t ${FULL_IMAGE} .
+                """
+            }
+        }
+
+        // stage('Docker push') {
+        //     steps {
+        //         sh """
+        //             docker push ${FULL_IMAGE}
+        //         """
+        //     }
+        // }
+
+    }
+    
+    post {
+        always {
+            sh """
+                docker rmi ${FULL_IMAGE}
+            """
+        }
+
+        // success {
+        //     script {
+        //         build job: 'agile-dreamers/general-piplines/update-infrastructure', parameters: [string(name: 'TAG', value: "${TAG}")]
+        //     }
+        // }
+    }
+    
+}
